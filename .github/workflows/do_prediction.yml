@@ -21,7 +21,7 @@ jobs:
           R -e 'library(devtools)'
           R -e 'install.packages("remotes")'
           R -e 'library(remotes)'
-          R -e 'remotes::install_github("eco4cast/neon4cast", auth_token = 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)'
+          R -e 'remotes::install_github("eco4cast/neon4cast", auth_token = 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)'
           
 # Point to the right path, run the right Rscript command
       - name: Run automatic prediction file
