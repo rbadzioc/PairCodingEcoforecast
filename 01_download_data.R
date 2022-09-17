@@ -32,7 +32,7 @@ merge_met_past <- function(target){
     mutate(date = lubridate::as_date(time)) %>% 
     group_by(date, site_id) %>% 
     summarize(air_temperature = mean(predicted, na.rm = TRUE), .groups = "drop") %>% 
-    rename(time = date) %>% 
+    rename(time = datetime) %>% 
     mutate(air_temperature = air_temperature - 273.15)
   
   ## Merge in past NOAA data into the targets file, matching by date.
