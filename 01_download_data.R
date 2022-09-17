@@ -37,7 +37,7 @@ merge_met_past <- function(target){
   
   ## Merge in past NOAA data into the targets file, matching by date.
   target <- target |> 
-    select(time, site_id, variable, observed) |> 
+    select(datetime, site_id, variable, observed) |> 
     filter(variable %in% c("temperature", "oxygen")) |> 
     tidyr::pivot_wider(names_from = "variable", values_from = "observed")
   
