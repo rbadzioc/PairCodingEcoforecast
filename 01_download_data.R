@@ -32,12 +32,12 @@ merge_met_past <- function(target){
     mutate(time = lubridate::as_date(time)) %>% 
     group_by(time, site_id) %>% 
     summarize(air_temperature = mean(predicted, na.rm = TRUE), .groups = "drop") %>% 
-    rename(time = time) %>% 
+    rename(time = datetime) %>% 
     mutate(air_temperature = air_temperature - 273.15)
   
   ## Merge in past NOAA data into the targets file, matching by date.
   target <- target |> 
-    select(datetime, site_id, variable, observed) |> 
+    select(time, site_id, variable, observed) |> 
     filter(variable %in% c("temperature", "oxygen")) |> 
     tidyr::pivot_wider(names_from = "variable", values_from = "observed")
   
