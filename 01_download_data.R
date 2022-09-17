@@ -41,7 +41,7 @@ merge_met_past <- function(target){
     filter(variable %in% c("temperature", "oxygen")) |> 
     tidyr::pivot_wider(names_from = "variable", values_from = "observed")
   
-  target <- left_join(target, noaa_past_mean, by = c("time","site_id"))
+  target <- left_join(target, noaa_past_mean, by = c("datetime" = "time" ,"site_id"))
   
 }
 
