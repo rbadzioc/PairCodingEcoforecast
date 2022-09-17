@@ -30,7 +30,7 @@ merge_met_past <- function(target){
   ## Aggregate (to day) and convert units of drivers
   noaa_past_mean <- noaa_past %>% 
     mutate(date = lubridate::as_date(time)) %>% 
-    group_by(datetime, site_id) %>% 
+    group_by(time, site_id) %>% 
     summarize(air_temperature = mean(predicted, na.rm = TRUE), .groups = "drop") %>% 
     #rename(time = datetime) %>% 
     mutate(air_temperature = air_temperature - 273.15)
