@@ -16,7 +16,7 @@ jobs:
           
 #set up R
       - name: Install packages
-         run:|
+        run:
           R -e 'install.packages("rMR")'
           R -e 'devtools::install_github("eco4cast/neon4cast")'
           
