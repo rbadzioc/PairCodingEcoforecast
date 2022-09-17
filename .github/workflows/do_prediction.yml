@@ -18,6 +18,8 @@ jobs:
       - name: Install packages
         run:
           R -e 'install.packages("rMR")'
+          R -e 'library(devtools)'
+          R -e 'devtools::install_github("eco4cast/neon4cast")'
           
 # Point to the right path, run the right Rscript command
       - name: Run automatic prediction file
