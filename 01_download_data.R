@@ -29,15 +29,15 @@ merge_met_past <- function(target){
   
   ## Aggregate (to day) and convert units of drivers
   noaa_past_mean <- noaa_past %>% 
-    mutate(time = lubridate::as_date(time)) %>% 
-    group_by(time, site_id) %>% 
+    mutate(date = lubridate::as_date(time)) %>% 
+    group_by(date, site_id) %>% 
     summarize(air_temperature = mean(predicted, na.rm = TRUE), .groups = "drop") %>% 
-    rename(time = datetime) %>% 
+    rename(time = date) %>% 
     mutate(air_temperature = air_temperature - 273.15)
   
   ## Merge in past NOAA data into the targets file, matching by date.
   target <- target |> 
-    select(time, site_id, variable, observed) |> 
+    select(datetime, site_id, variable, observed) |> 
     filter(variable %in% c("temperature", "oxygen")) |> 
     tidyr::pivot_wider(names_from = "variable", values_from = "observed")
   
