@@ -51,8 +51,9 @@ run_forecast <- function(model,met_forecast,site_data){
   
   ## reorganize into EFI standard
   forecast <- forecast |> 
-    mutate(start_time = forecast_date) |> #start_time is today
-    select(time, start_time, site_id, variable, ensemble, predicted)
+    mutate(reference_datetime = forecast_date) |> #start_time is today
+    mutate(datetime = time) |> #start_time is today
+    select(datetime, reference_datetime, site_id, variable, ensemble, predicted)
   
   return(forecast)
 }
