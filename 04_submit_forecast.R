@@ -6,7 +6,7 @@ submit_forecast <- function(forecast,team_info,submit=FALSE){
   
   #Forecast output file name in standards requires for Challenge.  
   # csv.gz means that it will be compressed
-  forecast_file <- paste0("aquatics","-",min(forecast$time),"-",team_info$team_name,".csv.gz")
+  forecast_file <- paste0("aquatics","-",min(forecast$datetime),"-",team_info$team_name,".csv.gz")
   
   #Write csv to disk
   write_csv(forecast, forecast_file)
