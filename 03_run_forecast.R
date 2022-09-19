@@ -20,7 +20,6 @@ run_forecast <- function(model,met_forecast,site_data){
       
       #use model to forecast water temperature for each ensemble member
       forecasted_temperature <- predict(model[[i]],met_future_site)
-      
       #use forecasted temperature to predict oyxgen by assuming that oxygen is saturated.  
       forecasted_oxygen <- rMR::Eq.Ox.conc(forecasted_temperature, 
                                            elevation.m = site_info$field_mean_elevation_m, 
