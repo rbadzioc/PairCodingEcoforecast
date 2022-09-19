@@ -53,8 +53,8 @@ run_forecast <- function(model,met_forecast,site_data){
   forecast <- forecast |> 
     mutate(reference_datetime = forecast_date) |> #start_time is today
     mutate(datetime = time) |> #time called datetime
-    mutate(parameter = ensemble) |> #ensemble called parameter
-    select(datetime, reference_datetime, site_id, variable, parameter, predicted) #change to match
+    #mutate(parameter = ensemble) |> #ensemble called parameter
+    select(datetime, reference_datetime, site_id, variable, ensemble, predicted) #change to match
   
   return(forecast)
 }
