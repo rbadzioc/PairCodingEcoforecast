@@ -1,0 +1,511 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<eml:eml xmlns:eml="https://eml.ecoinformatics.org/eml-2.2.0" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:stmml="http://www.xml-cml.org/schema/stmml-1.2" packageId="2022-09-17 14:34:24" system="datetime" xsi:schemaLocation="https://eml.ecoinformatics.org/eml-2.2.0 https://eml.ecoinformatics.org/eml-2.2.0/eml.xsd">
+  <dataset>
+    <title>air2waterSat_MCD forecast of temperature, oxygen, and chlorophyll-a in lakes and streams</title>
+    <creator>
+      <individualName>
+        <givenName>Mike</givenName>
+        <surName>Dietze</surName>
+      </individualName>
+      <organizationName>Boston University</organizationName>
+      <electronicMailAddress>dietze@bu.edu</electronicMailAddress>
+    </creator>
+    <pubDate>2022-09-17</pubDate>
+    <intellectualRights>https://creativecommons.org/licenses/by/4.0/</intellectualRights>
+    <coverage>
+      <geographicCoverage>
+        <geographicDescription>ARIK, D10</geographicDescription>
+        <boundingCoordinates>
+          <westBoundingCoordinate>-102.4471</westBoundingCoordinate>
+          <eastBoundingCoordinate>-102.4471</eastBoundingCoordinate>
+          <northBoundingCoordinate>39.7582</northBoundingCoordinate>
+          <southBoundingCoordinate>39.7582</southBoundingCoordinate>
+        </boundingCoordinates>
+      </geographicCoverage>
+      <geographicCoverage>
+        <geographicDescription>BARC, D03</geographicDescription>
+        <boundingCoordinates>
+          <westBoundingCoordinate>-82.0084</westBoundingCoordinate>
+          <eastBoundingCoordinate>-82.0084</eastBoundingCoordinate>
+          <northBoundingCoordinate>29.676</northBoundingCoordinate>
+          <southBoundingCoordinate>29.676</southBoundingCoordinate>
+        </boundingCoordinates>
+      </geographicCoverage>
+      <geographicCoverage>
+        <geographicDescription>BIGC, D17</geographicDescription>
+        <boundingCoordinates>
+          <westBoundingCoordinate>-119.2575</westBoundingCoordinate>
+          <eastBoundingCoordinate>-119.2575</eastBoundingCoordinate>
+          <northBoundingCoordinate>37.0597</northBoundingCoordinate>
+          <southBoundingCoordinate>37.0597</southBoundingCoordinate>
+        </boundingCoordinates>
+      </geographicCoverage>
+      <geographicCoverage>
+        <geographicDescription>BLDE, D12</geographicDescription>
+        <boundingCoordinates>
+          <westBoundingCoordinate>-110.5871</westBoundingCoordinate>
+          <eastBoundingCoordinate>-110.5871</eastBoundingCoordinate>
+          <northBoundingCoordinate>44.9501</northBoundingCoordinate>
+          <southBoundingCoordinate>44.9501</southBoundingCoordinate>
+        </boundingCoordinates>
+      </geographicCoverage>
+      <geographicCoverage>
+        <geographicDescription>BLWA, D08</geographicDescription>
+        <boundingCoordinates>
+          <westBoundingCoordinate>-87.7982</westBoundingCoordinate>
+          <eastBoundingCoordinate>-87.7982</eastBoundingCoordinate>
+          <northBoundingCoordinate>32.5415</northBoundingCoordinate>
+          <southBoundingCoordinate>32.5415</southBoundingCoordinate>
+        </boundingCoordinates>
+      </geographicCoverage>
+      <geographicCoverage>
+        <geographicDescription>CARI, D19</geographicDescription>
+        <boundingCoordinates>
+          <westBoundingCoordinate>-147.504</westBoundingCoordinate>
+          <eastBoundingCoordinate>-147.504</eastBoundingCoordinate>
+          <northBoundingCoordinate>65.1532</northBoundingCoordinate>
+          <southBoundingCoordinate>65.1532</southBoundingCoordinate>
+        </boundingCoordinates>
+      </geographicCoverage>
+      <geographicCoverage>
+        <geographicDescription>COMO, D13</geographicDescription>
+        <boundingCoordinates>
+          <westBoundingCoordinate>-105.5442</westBoundingCoordinate>
+          <eastBoundingCoordinate>-105.5442</eastBoundingCoordinate>
+          <northBoundingCoordinate>40.035</northBoundingCoordinate>
+          <southBoundingCoordinate>40.035</southBoundingCoordinate>
+        </boundingCoordinates>
+      </geographicCoverage>
+      <geographicCoverage>
+        <geographicDescription>CRAM, D05</geographicDescription>
+        <boundingCoordinates>
+          <westBoundingCoordinate>-89.4737</westBoundingCoordinate>
+          <eastBoundingCoordinate>-89.4737</eastBoundingCoordinate>
+          <northBoundingCoordinate>46.2097</northBoundingCoordinate>
+          <southBoundingCoordinate>46.2097</southBoundingCoordinate>
+        </boundingCoordinates>
+      </geographicCoverage>
+      <geographicCoverage>
+        <geographicDescription>CUPE, D04</geographicDescription>
+        <boundingCoordinates>
+          <westBoundingCoordinate>-66.9868</westBoundingCoordinate>
+          <eastBoundingCoordinate>-66.9868</eastBoundingCoordinate>
+          <northBoundingCoordinate>18.1135</northBoundingCoordinate>
+          <southBoundingCoordinate>18.1135</southBoundingCoordinate>
+        </boundingCoordinates>
+      </geographicCoverage>
+      <geographicCoverage>
+        <geographicDescription>FLNT, D03</geographicDescription>
+        <boundingCoordinates>
+          <westBoundingCoordinate>-84.4374</westBoundingCoordinate>
+          <eastBoundingCoordinate>-84.4374</eastBoundingCoordinate>
+          <northBoundingCoordinate>31.1854</northBoundingCoordinate>
+          <southBoundingCoordinate>31.1854</southBoundingCoordinate>
+        </boundingCoordinates>
+      </geographicCoverage>
+      <geographicCoverage>
+        <geographicDescription>GUIL, D04</geographicDescription>
+        <boundingCoordinates>
+          <westBoundingCoordinate>-66.7987</westBoundingCoordinate>
+          <eastBoundingCoordinate>-66.7987</eastBoundingCoordinate>
+          <northBoundingCoordinate>18.1741</northBoundingCoordinate>
+          <southBoundingCoordinate>18.1741</southBoundingCoordinate>
+        </boundingCoordinates>
+      </geographicCoverage>
+      <geographicCoverage>
+        <geographicDescription>HOPB, D01</geographicDescription>
+        <boundingCoordinates>
+          <westBoundingCoordinate>-72.3295</westBoundingCoordinate>
+          <eastBoundingCoordinate>-72.3295</eastBoundingCoordinate>
+          <northBoundingCoordinate>42.4719</northBoundingCoordinate>
+          <southBoundingCoordinate>42.4719</southBoundingCoordinate>
+        </boundingCoordinates>
+      </geographicCoverage>
+      <geographicCoverage>
+        <geographicDescription>KING, D06</geographicDescription>
+        <boundingCoordinates>
+          <westBoundingCoordinate>-96.6038</westBoundingCoordinate>
+          <eastBoundingCoordinate>-96.6038</eastBoundingCoordinate>
+          <northBoundingCoordinate>39.1051</northBoundingCoordinate>
+          <southBoundingCoordinate>39.1051</southBoundingCoordinate>
+        </boundingCoordinates>
+      </geographicCoverage>
+      <geographicCoverage>
+        <geographicDescription>LECO, D07</geographicDescription>
+        <boundingCoordinates>
+          <westBoundingCoordinate>-83.5038</westBoundingCoordinate>
+          <eastBoundingCoordinate>-83.5038</eastBoundingCoordinate>
+          <northBoundingCoordinate>35.6904</northBoundingCoordinate>
+          <southBoundingCoordinate>35.6904</southBoundingCoordinate>
+        </boundingCoordinates>
+      </geographicCoverage>
+      <geographicCoverage>
+        <geographicDescription>LEWI, D02</geographicDescription>
+        <boundingCoordinates>
+          <westBoundingCoordinate>-77.9832</westBoundingCoordinate>
+          <eastBoundingCoordinate>-77.9832</eastBoundingCoordinate>
+          <northBoundingCoordinate>39.0956</northBoundingCoordinate>
+          <southBoundingCoordinate>39.0956</southBoundingCoordinate>
+        </boundingCoordinates>
+      </geographicCoverage>
+      <geographicCoverage>
+        <geographicDescription>LIRO, D05</geographicDescription>
+        <boundingCoordinates>
+          <westBoundingCoordinate>-89.7048</westBoundingCoordinate>
+          <eastBoundingCoordinate>-89.7048</eastBoundingCoordinate>
+          <northBoundingCoordinate>45.9983</northBoundingCoordinate>
+          <southBoundingCoordinate>45.9983</southBoundingCoordinate>
+        </boundingCoordinates>
+      </geographicCoverage>
+      <geographicCoverage>
+        <geographicDescription>MART, D16</geographicDescription>
+        <boundingCoordinates>
+          <westBoundingCoordinate>-121.9338</westBoundingCoordinate>
+          <eastBoundingCoordinate>-121.9338</eastBoundingCoordinate>
+          <northBoundingCoordinate>45.7908</northBoundingCoordinate>
+          <southBoundingCoordinate>45.7908</southBoundingCoordinate>
+        </boundingCoordinates>
+      </geographicCoverage>
+      <geographicCoverage>
+        <geographicDescription>MAYF, D08</geographicDescription>
+        <boundingCoordinates>
+          <westBoundingCoordinate>-87.4077</westBoundingCoordinate>
+          <eastBoundingCoordinate>-87.4077</eastBoundingCoordinate>
+          <northBoundingCoordinate>32.9604</northBoundingCoordinate>
+          <southBoundingCoordinate>32.9604</southBoundingCoordinate>
+        </boundingCoordinates>
+      </geographicCoverage>
+      <geographicCoverage>
+        <geographicDescription>MCDI, D06</geographicDescription>
+        <boundingCoordinates>
+          <westBoundingCoordinate>-96.443</westBoundingCoordinate>
+          <eastBoundingCoordinate>-96.443</eastBoundingCoordinate>
+          <northBoundingCoordinate>38.9459</northBoundingCoordinate>
+          <southBoundingCoordinate>38.9459</southBoundingCoordinate>
+        </boundingCoordinates>
+      </geographicCoverage>
+      <geographicCoverage>
+        <geographicDescription>MCRA, D16</geographicDescription>
+        <boundingCoordinates>
+          <westBoundingCoordinate>-122.1655</westBoundingCoordinate>
+          <eastBoundingCoordinate>-122.1655</eastBoundingCoordinate>
+          <northBoundingCoordinate>44.2596</northBoundingCoordinate>
+          <southBoundingCoordinate>44.2596</southBoundingCoordinate>
+        </boundingCoordinates>
+      </geographicCoverage>
+      <geographicCoverage>
+        <geographicDescription>OKSR, D18</geographicDescription>
+        <boundingCoordinates>
+          <westBoundingCoordinate>-149.143</westBoundingCoordinate>
+          <eastBoundingCoordinate>-149.143</eastBoundingCoordinate>
+          <northBoundingCoordinate>68.6698</northBoundingCoordinate>
+          <southBoundingCoordinate>68.6698</southBoundingCoordinate>
+        </boundingCoordinates>
+      </geographicCoverage>
+      <geographicCoverage>
+        <geographicDescription>POSE, D02</geographicDescription>
+        <boundingCoordinates>
+          <westBoundingCoordinate>-78.1473</westBoundingCoordinate>
+          <eastBoundingCoordinate>-78.1473</eastBoundingCoordinate>
+          <northBoundingCoordinate>38.8943</northBoundingCoordinate>
+          <southBoundingCoordinate>38.8943</southBoundingCoordinate>
+        </boundingCoordinates>
+      </geographicCoverage>
+      <geographicCoverage>
+        <geographicDescription>PRIN, D11</geographicDescription>
+        <boundingCoordinates>
+          <westBoundingCoordinate>-97.7823</westBoundingCoordinate>
+          <eastBoundingCoordinate>-97.7823</eastBoundingCoordinate>
+          <northBoundingCoordinate>33.3785</northBoundingCoordinate>
+          <southBoundingCoordinate>33.3785</southBoundingCoordinate>
+        </boundingCoordinates>
+      </geographicCoverage>
+      <geographicCoverage>
+        <geographicDescription>PRLA, D09</geographicDescription>
+        <boundingCoordinates>
+          <westBoundingCoordinate>-99.1139</westBoundingCoordinate>
+          <eastBoundingCoordinate>-99.1139</eastBoundingCoordinate>
+          <northBoundingCoordinate>47.1591</northBoundingCoordinate>
+          <southBoundingCoordinate>47.1591</southBoundingCoordinate>
+        </boundingCoordinates>
+      </geographicCoverage>
+      <geographicCoverage>
+        <geographicDescription>PRPO, D09</geographicDescription>
+        <boundingCoordinates>
+          <westBoundingCoordinate>-99.2531</westBoundingCoordinate>
+          <eastBoundingCoordinate>-99.2531</eastBoundingCoordinate>
+          <northBoundingCoordinate>47.1298</northBoundingCoordinate>
+          <southBoundingCoordinate>47.1298</southBoundingCoordinate>
+        </boundingCoordinates>
+      </geographicCoverage>
+      <geographicCoverage>
+        <geographicDescription>REDB, D15</geographicDescription>
+        <boundingCoordinates>
+          <westBoundingCoordinate>-111.7979</westBoundingCoordinate>
+          <eastBoundingCoordinate>-111.7979</eastBoundingCoordinate>
+          <northBoundingCoordinate>40.7839</northBoundingCoordinate>
+          <southBoundingCoordinate>40.7839</southBoundingCoordinate>
+        </boundingCoordinates>
+      </geographicCoverage>
+      <geographicCoverage>
+        <geographicDescription>SUGG, D03</geographicDescription>
+        <boundingCoordinates>
+          <westBoundingCoordinate>-82.0177</westBoundingCoordinate>
+          <eastBoundingCoordinate>-82.0177</eastBoundingCoordinate>
+          <northBoundingCoordinate>29.6878</northBoundingCoordinate>
+          <southBoundingCoordinate>29.6878</southBoundingCoordinate>
+        </boundingCoordinates>
+      </geographicCoverage>
+      <geographicCoverage>
+        <geographicDescription>SYCA, D14</geographicDescription>
+        <boundingCoordinates>
+          <westBoundingCoordinate>-111.5081</westBoundingCoordinate>
+          <eastBoundingCoordinate>-111.5081</eastBoundingCoordinate>
+          <northBoundingCoordinate>33.751</northBoundingCoordinate>
+          <southBoundingCoordinate>33.751</southBoundingCoordinate>
+        </boundingCoordinates>
+      </geographicCoverage>
+      <geographicCoverage>
+        <geographicDescription>TECR, D17</geographicDescription>
+        <boundingCoordinates>
+          <westBoundingCoordinate>-119.0274</westBoundingCoordinate>
+          <eastBoundingCoordinate>-119.0274</eastBoundingCoordinate>
+          <northBoundingCoordinate>36.9559</northBoundingCoordinate>
+          <southBoundingCoordinate>36.9559</southBoundingCoordinate>
+        </boundingCoordinates>
+      </geographicCoverage>
+      <geographicCoverage>
+        <geographicDescription>TOMB, D08</geographicDescription>
+        <boundingCoordinates>
+          <westBoundingCoordinate>-88.1589</westBoundingCoordinate>
+          <eastBoundingCoordinate>-88.1589</eastBoundingCoordinate>
+          <northBoundingCoordinate>31.8534</northBoundingCoordinate>
+          <southBoundingCoordinate>31.8534</southBoundingCoordinate>
+        </boundingCoordinates>
+      </geographicCoverage>
+      <geographicCoverage>
+        <geographicDescription>TOOK, D18</geographicDescription>
+        <boundingCoordinates>
+          <westBoundingCoordinate>-149.6106</westBoundingCoordinate>
+          <eastBoundingCoordinate>-149.6106</eastBoundingCoordinate>
+          <northBoundingCoordinate>68.6307</northBoundingCoordinate>
+          <southBoundingCoordinate>68.6307</southBoundingCoordinate>
+        </boundingCoordinates>
+      </geographicCoverage>
+      <geographicCoverage>
+        <geographicDescription>WALK, D07</geographicDescription>
+        <boundingCoordinates>
+          <westBoundingCoordinate>-84.2793</westBoundingCoordinate>
+          <eastBoundingCoordinate>-84.2793</eastBoundingCoordinate>
+          <northBoundingCoordinate>35.9574</northBoundingCoordinate>
+          <southBoundingCoordinate>35.9574</southBoundingCoordinate>
+        </boundingCoordinates>
+      </geographicCoverage>
+      <geographicCoverage>
+        <geographicDescription>WLOU, D13</geographicDescription>
+        <boundingCoordinates>
+          <westBoundingCoordinate>-105.9154</westBoundingCoordinate>
+          <eastBoundingCoordinate>-105.9154</eastBoundingCoordinate>
+          <northBoundingCoordinate>39.8914</northBoundingCoordinate>
+          <southBoundingCoordinate>39.8914</southBoundingCoordinate>
+        </boundingCoordinates>
+      </geographicCoverage>
+      <temporalCoverage>
+        <rangeOfDates>
+          <beginDate>
+            <calendarDate>2022-09-17</calendarDate>
+          </beginDate>
+          <endDate>
+            <calendarDate>2022-10-21</calendarDate>
+          </endDate>
+        </rangeOfDates>
+      </temporalCoverage>
+    </coverage>
+    <contact>
+      <individualName>
+        <givenName>Mike</givenName>
+        <surName>Dietze</surName>
+      </individualName>
+      <organizationName>Boston University</organizationName>
+      <electronicMailAddress>dietze@bu.edu</electronicMailAddress>
+    </contact>
+    <dataTable>
+      <entityName>forecast</entityName>
+      <entityDescription>forecast of temperature, oxygen, and chlorophyll-a in lakes and streams</entityDescription>
+      <physical>
+        <objectName>aquatics-2022-09-17-air2waterSat_MCD.csv.gz</objectName>
+        <size unit="bytes">875959</size>
+        <authentication method="MD5">7784dbdca1fe482dcb818cc411d3fbe5</authentication>
+        <dataFormat>
+          <textFormat>
+            <recordDelimiter>&#13;
+</recordDelimiter>
+            <attributeOrientation>column</attributeOrientation>
+            <simpleDelimited>
+              <fieldDelimiter>,</fieldDelimiter>
+            </simpleDelimited>
+          </textFormat>
+        </dataFormat>
+      </physical>
+      <attributeList>
+        <attribute>
+          <attributeName>time</attributeName>
+          <attributeDefinition>[dimension]{time}</attributeDefinition>
+          <storageType>date</storageType>
+          <measurementScale>
+            <dateTime>
+              <formatString>YYYY-MM-DD</formatString>
+              <dateTimeDomain/>
+            </dateTime>
+          </measurementScale>
+        </attribute>
+        <attribute>
+          <attributeName>siteID</attributeName>
+          <attributeDefinition>[dimension]{neon site}</attributeDefinition>
+          <storageType>string</storageType>
+          <measurementScale>
+            <nominal>
+              <nonNumericDomain>
+                <textDomain>
+                  <definition>NEON site ID</definition>
+                </textDomain>
+              </nonNumericDomain>
+            </nominal>
+          </measurementScale>
+        </attribute>
+        <attribute>
+          <attributeName>ensemble</attributeName>
+          <attributeDefinition>[dimension]{index of ensemble member}</attributeDefinition>
+          <storageType>float</storageType>
+          <measurementScale>
+            <ratio>
+              <unit>
+                <standardUnit>dimensionless</standardUnit>
+              </unit>
+              <numericDomain>
+                <numberType>integer</numberType>
+              </numericDomain>
+            </ratio>
+          </measurementScale>
+        </attribute>
+        <attribute>
+          <attributeName>forecast</attributeName>
+          <attributeDefinition>[flag]{whether represents forecast}</attributeDefinition>
+          <storageType>float</storageType>
+          <measurementScale>
+            <ratio>
+              <unit>
+                <standardUnit>dimensionless</standardUnit>
+              </unit>
+              <numericDomain>
+                <numberType>integer</numberType>
+              </numericDomain>
+            </ratio>
+          </measurementScale>
+        </attribute>
+        <attribute>
+          <attributeName>data_assimilation</attributeName>
+          <attributeDefinition>[flag]{whether time step assimilated data}</attributeDefinition>
+          <storageType>float</storageType>
+          <measurementScale>
+            <ratio>
+              <unit>
+                <standardUnit>dimensionless</standardUnit>
+              </unit>
+              <numericDomain>
+                <numberType>integer</numberType>
+              </numericDomain>
+            </ratio>
+          </measurementScale>
+        </attribute>
+        <attribute>
+          <attributeName>temperature</attributeName>
+          <attributeDefinition>[variable]{water temperature}</attributeDefinition>
+          <storageType>float</storageType>
+          <measurementScale>
+            <ratio>
+              <unit>
+                <standardUnit>dimensionless</standardUnit>
+              </unit>
+              <numericDomain>
+                <numberType>real</numberType>
+              </numericDomain>
+            </ratio>
+          </measurementScale>
+        </attribute>
+        <attribute>
+          <attributeName>oxygen</attributeName>
+          <attributeDefinition>[variable]{disolved oxygen}</attributeDefinition>
+          <storageType>float</storageType>
+          <measurementScale>
+            <ratio>
+              <unit>
+                <standardUnit>dimensionless</standardUnit>
+              </unit>
+              <numericDomain>
+                <numberType>real</numberType>
+              </numericDomain>
+            </ratio>
+          </measurementScale>
+        </attribute>
+        <attribute>
+          <attributeName>chla</attributeName>
+          <attributeDefinition>[variable]{chlorophyll-a}</attributeDefinition>
+          <storageType>float</storageType>
+          <measurementScale>
+            <ratio>
+              <unit>
+                <standardUnit>dimensionless</standardUnit>
+              </unit>
+              <numericDomain>
+                <numberType>real</numberType>
+              </numericDomain>
+            </ratio>
+          </measurementScale>
+        </attribute>
+      </attributeList>
+    </dataTable>
+  </dataset>
+  <additionalMetadata>
+    <metadata>
+      <forecast>
+        <drivers>
+          <complexity>1</complexity>
+          <propagation>
+            <size>31</size>
+            <type>ensemble</type>
+          </propagation>
+          <status>propagates</status>
+        </drivers>
+        <forecast_horizon>3024000 seconds</forecast_horizon>
+        <forecast_issue_time>2022-09-17</forecast_issue_time>
+        <forecast_iteration_id>2022-09-17 14:34:24</forecast_iteration_id>
+        <forecast_project_id>air2waterSat_MCD</forecast_project_id>
+        <initial_conditions>
+          <status>absent</status>
+        </initial_conditions>
+        <metadata_standard_version>0.3</metadata_standard_version>
+        <model_description>
+          <forecast_model_id>a2d4f9982539dd35465f9181c08c4c414b228fe7</forecast_model_id>
+          <name>Air temperature to water temperature linear regression plus assume saturated oxygen</name>
+          <repository>https://github.com/rbadzioc/PairCodingEcoforecast</repository>
+          <type>empirical</type>
+        </model_description>
+        <obs_error>
+          <status>absent</status>
+        </obs_error>
+        <parameters>
+          <complexity>2</complexity>
+          <status>data_driven</status>
+        </parameters>
+        <process_error>
+          <status>absent</status>
+        </process_error>
+        <random_effects>
+          <status>absent</status>
+        </random_effects>
+        <timestep>86400</timestep>
+      </forecast>
+    </metadata>
+  </additionalMetadata>
+</eml:eml>
