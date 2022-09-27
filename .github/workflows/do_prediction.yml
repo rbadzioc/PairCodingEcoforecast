@@ -1,4 +1,4 @@
-on:
+on: xxx
   workflow_dispatch:
   schedule:
   - cron: "0 20 * * *"
